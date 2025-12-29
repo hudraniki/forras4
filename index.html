@@ -4,52 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Forrásmegjelölés – online gyakorlók</title>
+
   <style>
     body {
+      margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: #f6f7fb;
-      margin: 0;
       color: #111;
     }
+
     .wrap {
       max-width: 720px;
       margin: 0 auto;
       padding: 24px;
     }
+
     .card {
-      background: #fff;
+      background: #ffffff;
       border-radius: 14px;
-      padding: 20px;
-      box-shadow: 0 6px 18px rgba(0,0,0,.06);
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     }
+
     h1 {
       font-size: 22px;
       margin: 0 0 12px;
     }
+
     .muted {
       color: #555;
       font-size: 14px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
-    a.test-link {
+
+    .test-link {
       display: block;
-      padding: 14px 16px;
-      margin: 12px 0;
-      border-radius: 12px;
-      border: 1px solid #eceef6;
-      background: #fafbff;
       text-decoration: none;
+      padding: 16px;
+      margin-bottom: 14px;
+      border-radius: 12px;
+      border: 1px solid #e3e6f0;
+      background: #fafbff;
       color: #111;
       font-size: 16px;
       font-weight: 600;
+      transition: background 0.2s ease;
     }
-    a.test-link:hover {
+
+    .test-link:hover {
       background: #eef3ff;
     }
+
     .note {
       font-size: 13px;
       color: #666;
-      margin-top: 20px;
+      margin-top: 24px;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -57,26 +67,33 @@
 <body>
   <div class="wrap">
     <div class="card">
+
       <h1>Forrásmegjelölés – gyakorló tesztek</h1>
+
       <div class="muted">
-        Válaszd ki, melyik évfolyam gyakorlóját szeretnéd megnyitni.
+        Válaszd ki, melyik évfolyam online gyakorlóját szeretnéd megnyitni.
       </div>
 
+      <!-- 4. osztály -->
       <a class="test-link" href="./forras4.html">
         4. osztály – alapfogalmak, forrás felismerése
       </a>
 
+      <!-- 5–6. évfolyam -->
       <a class="test-link" href="./forras56.html">
         5–6. évfolyam – pontosabb hivatkozás, idézés
       </a>
 
+      <!-- 7–8. évfolyam -->
       <a class="test-link" href="./forras78.html">
-        7–8. évfolyam – plágium, etikus és digitális forráshasználat
+        7–8. évfolyam – etikus forráshasználat, plágium
       </a>
 
       <div class="note">
-        Megjegyzés: minden teszt külön menti az eredményeket az adatbázisba.
+        Megjegyzés: minden teszt külön menti az eredményeket az adatbázisba.<br>
+        Ha egy teszt még nem készült el, a link ideiglenesen 404-et adhat.
       </div>
+
     </div>
   </div>
 </body>
