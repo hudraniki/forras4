@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forrásmegjelölés – gyakorló tesztek</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: #f6f7fb;
+      color: #111;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .choice {
+      display: block;
+      text-decoration: none;
+      padding: 18px;
+      margin-bottom: 14px;
+      border-radius: 14px;
+      background: #eef3ff;
+      color: #111;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .choice:hover {
+      background: #dfe8ff;
+      transform: translateY(-1px);
+    }
+
+    .note {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #666;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+
+      <h1>Forrásmegjelölés – gyakorló tesztek</h1>
+
+      <div class="subtitle">
+        Válaszd ki, melyik évfolyam online gyakorlóját szeretnéd megnyitni.
+      </div>
+
+      <!-- 4. osztály -->
+      <a class="choice" href="./forras4.html">
+        4. osztály – alapfogalmak, forrás felismerése
+      </a>
+
+      <!-- 5–6. évfolyam -->
+      <a class="choice" href="./forras56.html">
+        5–6. évfolyam – pontosabb hivatkozás, idézés
+      </a>
+
+      <!-- 7–8. évfolyam -->
+      <a class="choice" href="./forras78.html">
+        7–8. évfolyam – haladó forráskezelés
+      </a>
+
+      <div class="note">
+        Megjegyzés: minden teszt külön oldalon fut, és külön menti az
+        eredményeket az adatbázisába.
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
