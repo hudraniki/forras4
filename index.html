@@ -8,52 +8,51 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background: #f6f7fb;
       color: #111;
     }
 
-    .container {
+    .wrap {
       max-width: 720px;
-      margin: 40px auto;
-      padding: 0 16px;
+      margin: 0 auto;
+      padding: 32px 20px;
     }
 
     .card {
-      background: #ffffff;
+      background: #fff;
       border-radius: 16px;
       padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
     }
 
     h1 {
-      margin-top: 0;
-      font-size: 22px;
+      font-size: 24px;
+      margin: 0 0 12px;
     }
 
-    .subtitle {
-      font-size: 14px;
+    .muted {
       color: #555;
+      font-size: 14px;
       margin-bottom: 24px;
     }
 
-    .choice {
+    a.choice {
       display: block;
-      text-decoration: none;
-      padding: 18px;
-      margin-bottom: 14px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
       border-radius: 14px;
-      background: #eef3ff;
+      background: #f8f9ff;
+      border: 1px solid #e3e6f0;
+      text-decoration: none;
       color: #111;
       font-size: 16px;
       font-weight: 600;
-      transition: background 0.2s ease, transform 0.1s ease;
+      transition: background 0.2s ease;
     }
 
-    .choice:hover {
-      background: #dfe8ff;
-      transform: translateY(-1px);
+    a.choice:hover {
+      background: #eef3ff;
     }
 
     .note {
@@ -66,33 +65,32 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrap">
     <div class="card">
 
       <h1>Forrásmegjelölés – gyakorló tesztek</h1>
 
-      <div class="subtitle">
+      <div class="muted">
         Válaszd ki, melyik évfolyam online gyakorlóját szeretnéd megnyitni.
       </div>
 
       <!-- 4. osztály -->
-      <a class="choice" href="./forras4.html">
+      <a class="choice" href="forras4.html">
         4. osztály – alapfogalmak, forrás felismerése
       </a>
 
       <!-- 5–6. évfolyam -->
-      <a class="choice" href="./forras56.html">
+      <a class="choice" href="forras56.html">
         5–6. évfolyam – pontosabb hivatkozás, idézés
       </a>
 
       <!-- 7–8. évfolyam -->
-      <a class="choice" href="./forras78.html">
-        7–8. évfolyam – haladó forráskezelés
+      <a class="choice" href="forras78.html">
+        7–8. évfolyam – haladó forráshasználat
       </a>
 
       <div class="note">
-        Megjegyzés: minden teszt külön oldalon fut, és külön menti az
-        eredményeket az adatbázisába.
+        Megjegyzés: minden teszt külön menti az eredményeket a saját adatbázisába.
       </div>
 
     </div>
