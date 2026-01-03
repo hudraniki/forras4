@@ -151,14 +151,29 @@
     const TEACHER_PASSWORD = "Nixi99Nixi99";
 
     // ✅ UGYANAZ a Firebase projekt, mint a 4.-esnél -> ide a TE kulcsod/appId-d:
-    const firebaseConfig = {
-      apiKey: "AIzaSyC2ZN37vvWua8SY4h5dj0mZapcRIKeAAGo",
-      authDomain: "forras-gyakorlo.firebaseapp.com",
-      projectId: "forras-gyakorlo",
-      storageBucket: "forras-gyakorlo.firebasestorage.app",
-      messagingSenderId: "71098032558",
-      appId: "1:71098032558:web:44e7cef8c5c9900ac2a83f"
-    };
+  
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyClYzdDy4BCB-b2GMDO2lA1fMTbw8SkkY4",
+  authDomain: "forras-56.firebaseapp.com",
+  projectId: "forras-56",
+  storageBucket: "forras-56.firebasestorage.app",
+  messagingSenderId: "259665371030",
+  appId: "1:259665371030:web:cbdef457d37b4dde3a87b7",
+  measurementId: "G-HVL0JX28VG"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
     // ✅ ÚJ collection név az 5–6-osoknak (ettől lesz külön adatgyűjtés)
     const COLLECTION = "forras_56_submissions";
